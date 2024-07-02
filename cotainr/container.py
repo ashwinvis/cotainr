@@ -98,6 +98,7 @@ class SingularitySandbox:
                     "--nocolor",
                     "build",
                     "--force",  # sandbox_dir.mkdir() checks for existing sandbox image
+                    "--fakeroot",
                     "--sandbox",
                     "--fix-perms",
                     self.sandbox_dir,
